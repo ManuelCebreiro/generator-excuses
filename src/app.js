@@ -6,10 +6,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  //write your code here
-
-  document.querySelector("#excuses").innerHTML = Escusas();
-
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#excuses").innerHTML = Escusas();
+  });
   function Escusas() {
     let who = ["Un vagabundo", "Mi tio", "Mi perro", "Mi suegra"];
     let what = ["se comió", "rompió", "ensució", "robó"];
